@@ -2,6 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Estudiantes(models.Model):
-    nombres = models.TextField() # es calmo es una caja de texto
-    apellidos = models.TextField()
-    edad = models.TextField()
+    nombres = models.CharField(max_length=100) # es calmo es una caja de texto
+    apellidos = models.CharField(max_length=100)    
+    edad = models.IntegerField()
