@@ -4,5 +4,8 @@ from django.shortcuts import render
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def vit (*args, **kwargs):
-    return HttpResponse()
+def InicioDePagina(*args, **kwargs):
+    return HttpResponse('<h1> Hola, tiene que registrarse </h1>')
+
+def LoginVista (request,*args, **kwargs):
+    return  render(request,"login.html",{})
