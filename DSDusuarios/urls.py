@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('', admin.site.urls),
-    path('p1/', InicioDePagina),
-    path('p1/login', LoginVista),
+   # path('', admin.site.urls),
+    path('', InicioDePagina),
+    path('login', LoginVista),
 ]
