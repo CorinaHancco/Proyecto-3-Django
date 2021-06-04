@@ -6,3 +6,4 @@ class Estudiantes(models.Model):
     apellidos = models.CharField(max_length=100)    
     edad = models.IntegerField()
     cuidad = models.CharField(max_length=100)
+    donador = models.BooleanField()
